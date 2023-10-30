@@ -1,0 +1,70 @@
+footer {
+    background-color: #0d0d0d;
+    color: #D9D0C7;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+footer .logo, footer .baixeNossoApp {
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 3.125em;
+}
+
+footer .logo img {
+    width: 12.5em;
+    height: 3.75em;
+}
+
+footer .baixeNossoApp img {
+    width: 12.5em;
+    height: 3.75em;
+}
+
+footer a {
+    color: #D9D0C7;
+    text-decoration: none;
+    margin-right: 20px;
+    position: relative;
+}
+
+footer a:hover {
+    text-decoration: underline; 
+    text-decoration-color: #f2bf5e;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    margin-left: 140px;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links ul li {
+    display: inline-block;
+    margin-right: 130px;
+}
+
+.links a {
+    text-decoration: none; 
+    color: #D9D0C7; 
+}
+
+.links p {
+    margin: 0;
+    margin-right: 20px; 
+}
