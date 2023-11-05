@@ -7,17 +7,7 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-:root {
-  --white: #FFF;
-  --whitesmoke: #F9F9F9;
-  --light-grey: #ECECEC;
-  --grey: #C4C4C4;
-  --medium-grey: #A7A7A7;
-  --deep-grey: #343434;
-  --black: #000;
-  --blue: #1B77F3;
-  --red: #CF3C3F;
-}
+
 
 body{
   background-color: #595959;
