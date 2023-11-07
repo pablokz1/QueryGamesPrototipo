@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/catalogGames.css" />
+    <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+
+    <title>Formulario de catálogo de jogos</title>
+  </head>
+  <body>
+
+    <img src="../assets/image/logoff.png" alt="" class="btn-back" onclick="goBack()">
+
+    <main>
+      <section class="register">
+        <div class="wrapper">
+            
+          <div class="container-user">
+            <img src="../assets/image/profile.png" class="logo" />
+            <p>Name</p>
+          </div>
+
+          <h1>Catalogar Jogos</h1>
+
+          <label class="box-text">
+            <input
+              type="text"
+              name="game"
+              class="input"
+              placeholder="Nome do Jogo"
+              id="game"
+            />
+          </label>
+
+          <label class="box-text">
+            <select id="platform" name="platform" class="input">
+              <option value="">Plataforma</option>
+              <option value="playstation">PlayStation</option>
+              <option value="xbox">Games Pass</option>
+              <option value="switch">Nintendo Switch</option>
+              <option value="steam">Steam</option>
+              <option value="epicGames">Epic Games</option>
+            </select>
+          </label>
+
+          <label class="box-text">
+            <select id="gender" name="gender" class="input">
+              <option value="">Gênero</option>
+              <option value="action">Ação</option>
+              <option value="adventure">Aventura</option>
+              <option value="moba">Moba</option>
+              <option value="sports">Esporte</option>
+              <option value="fight">Luta</option>
+            </select>
+          </label>
+
+          <label class="box-text">
+            <select id="category" name="category" class="input">
+              <option value="">Categoria</option>
+              <option value="played">Jogando</option>
+              <option value="playing">Jogado</option>
+              <option value="reset">Zerado</option>
+              <option value="notRecommend">Não Recomento</option>
+              <option value="recommend">Recomendo</option>
+            </select>
+          </label>
+
+          <p>Avalie</p>
+
+          <ul class="avaliacao">
+            <li class="star-icon ativo" data-avaliacao="1"></li>
+            <li class="star-icon" data-avaliacao="2"></li>
+            <li class="star-icon" data-avaliacao="3"></li>
+            <li class="star-icon" data-avaliacao="4"></li>
+            <li class="star-icon" data-avaliacao="5"></li>
+          </ul>
+
+          <button class="button" onclick="catalog()">Catalogar</button>
+        </div>
+      </section>
+
+      <section class="wallpaper">
+        <div><img src="../assets/image/carroCadastro.png" alt="" /></div>
+      </section>
+    </main>
+
+    <script src="../js/catalogGames.js"></script>
+  </body>
+
+  <footer>
+    <div class="container-logo-footer">
+      <img
+        src="../assets/image/logoQuery.png"
+        alt="logo querygames"
+        class="logo-footer"
+      />
+    </div>
+    <div class="container-announcement-footer">
+      <img
+        src="../assets/image/baixe nosso app.png"
+        alt="baixe Nosso App"
+        class="announcement-img"
+      />
+    </div>
+    <div class="links">
+      <ul>
+        <li>
+          <a href="../index.html">Início</a>
+        </li>
+        <li>
+          <a href="#">Quem Somos?</a>
+        </li>
+        <li>
+          <p>Fale Conosco: <br />querygames@gmail.com</p>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</html>
