@@ -28,3 +28,7 @@ stars.forEach(function(star) {
     }
   });
 });
+
+function goBack() {
+  window.history.back();
+}
