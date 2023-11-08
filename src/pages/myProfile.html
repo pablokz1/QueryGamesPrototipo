@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
 </head>
 
 <!-- CORPO DA PAGINA -->
+
 <body>
     <div class="conteiner-user">
         <div class="profile-user">
@@ -27,16 +29,17 @@
 
         <div class="btns">
             <div class="config">
-                <img src="../assets/image/config.png" alt="" class="btn-config">
+                <img src="../assets/image/config.png" alt="" class="btn-config" onclick="notice()">
             </div>
-    
+
             <div class="logoff">
-                <img src="../assets/image/logoff.png" alt="" class="btn-logoff">
+                <img src="../assets/image/logoff.png" alt="" class="btn-back" onclick="goBack()">
             </div>
         </div>
 
     </div>
-</body> 
+    <script src="../js/myProfile.js"></script>
+</body>
 
 <footer>
     <div class="logo">
@@ -59,4 +62,5 @@
         </ul>
     </div>
 </footer>
+
 </html>
