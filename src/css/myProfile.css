@@ -18,11 +18,11 @@ body {
     justify-content: space-between;
     padding: 10px;
     border-radius: 10px;
-    margin: 25px 16px; 
+    margin: 25px 16px;
 }
 
 .profile-user {
-    flex-direction: row;    
+    flex-direction: row;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,21 +54,27 @@ body {
     height: 36px;
 }
 
-.btn-register-game:hover{
+.btn-register-game:hover {
     cursor: pointer;
 }
 
 .btns {
     display: flex;
     flex-direction: row;
+    gap: 20px;
 }
 
-.config {
-    padding-right: 40px;
-    width: 33px;
+.btn-config:hover {
+    cursor: pointer;
+
+
 }
 
-.logoff {
-    padding-right: 25px;
-    width: 33px;
+.btn-back {
+    margin-right: 20px;
+
+}
+
+.btn-back:hover {
+    cursor: pointer;
 }
