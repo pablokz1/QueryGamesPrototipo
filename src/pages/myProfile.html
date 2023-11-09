@@ -2,62 +2,110 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/myProfile.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/myProfile.css" />
     <title>My profile</title>
 </head>
 
 <!-- CORPO DA PAGINA -->
 
 <body>
-    <div class="conteiner-user">
+    <nav class="conteiner-user">
         <div class="profile-user">
-            <img src="../assets/image/profile.png" alt="" class="image-user">
+            <img src="../assets/image/profile.png" alt="" class="image-user" />
             <div class="data-user">
-                <p1>Ola, name</p1> <br>
+                <p1>Ola, name</p1> <br />
                 <p2>user&commat;gmail.com</p2>
             </div>
         </div>
 
         <a href="./catalogGames.html">
-            <button class="btn-register-game">
-                Catalogar jogo
-            </button>
+            <button class="btn-register-game">Catalogar jogo</button>
         </a>
 
         <div class="btns">
             <div class="config">
-                <img src="../assets/image/config.png" alt="" class="btn-config" onclick="notice()">
+                <img src="../assets/image/config.png" alt="" class="btn-config" onclick="notice()" />
             </div>
 
             <div class="logoff">
-                <img src="../assets/image/logoff.png" alt="" class="btn-back" onclick="goBack()">
+                <img src="../assets/image/logoff.png" alt="" class="btn-back" onclick="goBack()" />
             </div>
         </div>
+    </nav>
 
-    </div>
+    <section>
+        <div class="my-list">
+            <h1>MINHA LISTA</h1>
+            <div class="games">
+                <div>
+                    <img src="../assets/image/8lQ1y71vNA55ndiuSgWUSz6nqz3g0xR0.webp" alt="" />
+                </div>
+                <div>
+                    <img src="../assets/image/EGS_Cyberpunk2077_CDPROJEKTRED_S1_03_2560x1440-359e77d3cd0a40aebf3bbc130d14c5c7.jpg"
+                        alt="" />
+                </div>
+                <div>
+                    <img src="../assets/image/EGS_TheSims4_ElectronicArts_S2_1200x1600-ceadc3bd1e6f885ad64d9f115f51f5c0.jpg"
+                        alt="" />
+                </div>
+                <div>
+                    <img src="../assets/image/5977-Fortnite-Battle-Royale-capa-1.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <label class="box-text">
+            <select id="category" name="category" class="input">
+                <option value="">Categoria</option>
+                <option value="played">Jogando</option>
+                <option value="playing">Jogado</option>
+                <option value="reset">Zerado</option>
+                <option value="notRecommend">Não Recomento</option>
+                <option value="recommend">Recomendo</option>
+            </select>
+        </label>
+        <div class="games">
+            <div>
+                <img src="../assets/image/lE7RoDAH8Utq30mBwvYkrD7Y.webp" alt="" />
+            </div>
+            <div>
+                <img src="../assets/image/EGS_F123StandardEdition_Codemasters_S2_1200x1600-9ee0158a6d9f052deb753af836f9bd8d.jpg"
+                    alt="" />
+            </div>
+            <div>
+                <img src="../assets/image/XFU0aPBvtm3W2od1ZvhByAOv.jpg" alt="" />
+            </div>
+            <div>
+                <img src="../assets/image/5977-Fortnite-Battle-Royale-capa-1.jpg" alt="" />
+            </div>
+        </div>
+    </section>
+
     <script src="../js/myProfile.js"></script>
 </body>
 
 <footer>
     <div class="logo">
-        <img src="../assets/image/logoQuery.png" alt="logo querygames">
+        <img src="../assets/image/logoQuery.png" alt="logo querygames" />
     </div>
     <div class="baixeNossoApp">
-        <img src="../assets/image/baixe nosso app.png" alt="baixe Nosso App">
+        <img src="../assets/image/baixe nosso app.png" alt="baixe Nosso App" />
     </div>
     <div class="links">
         <ul>
             <li>
-                <a href="#">Início</a>
+                <a href="../index.html">Início</a>
             </li>
             <li>
                 <a href="#">Quem Somos?</a>
             </li>
             <li>
-                <p>Fale Conosco: <br>querygames&commat;gmail.com</p>
+                <p>Fale Conosco: <br />querygames&commat;gmail.com</p>
             </li>
         </ul>
     </div>
