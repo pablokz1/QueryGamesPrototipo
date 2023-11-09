@@ -12,8 +12,8 @@ body {
 }
 
 .logo img {
-  width: 210px;
-  height: 67px;
+  width: 13.125em;
+  height: 4.1875em;
   position: absolute;
   top: 10px;
   left: 4rem;
@@ -370,7 +370,6 @@ section h1 {
 
 .star-icon {
   display: inline-block;
-  cursor: pointer;
   color: #ffe500;
   font-size: 40px;
   margin-right: 5px;
@@ -382,4 +381,91 @@ section h1 {
 
 .star-icon.ativo ~ .star-icon::before {
   content: "\2606";
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    float: right;
+    position: relative;
+    margin-right: 60px;
+    top: 0;
+    width: 9.125em;
+    height: 3.1875em;
+  }
+
+  .login-btn {
+    left: 20%;
+    top: 0.5rem;
+  }
+
+  .search-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .nav-txt {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 100;
+    font-size: 15px;
+  }
+
+  .nav-txt span {
+    font-size: 20px;
+  }
+
+  section {
+    overflow-x: auto; 
+    white-space: nowrap; 
+  }
+  
+  .catalog1 {
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .games1 {
+    display: flex;
+    scroll-behavior: smooth;
+    width: 1000%;
+    gap: 0;
+    flex-wrap: nowrap;
+  }
+  
+  .games1 > div {
+    flex: 0 0 auto;
+    width: 100%;
+    scroll-snap-align: start;
+    width: 50%;
+  }
+  
+  .games2 {
+    display: flex;
+    scroll-behavior: smooth;
+    width: 100%;
+    gap: 0;
+    flex-wrap: nowrap;
+  }
+  
+  .games2 > div {
+    flex: 0 0 auto;
+    width: 100%;
+    scroll-snap-align: start;
+    width: 50%;
+  }
+
+  .avaliacao {
+    max-width: 80%;
+    margin-left: 20px;
+  }
+
+  .star-icon {
+    font-size: 20px;
+  }
+  
 }
