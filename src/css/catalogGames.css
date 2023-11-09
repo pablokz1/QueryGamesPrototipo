@@ -35,7 +35,7 @@ h1 {
   letter-spacing: 7px;
 }
 
-p {
+.wrapper p {
   color: #fff;
   font-family: Open Sans;
   font-weight: 600;

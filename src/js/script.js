@@ -19,3 +19,17 @@ toggleButton.addEventListener('click', function () {
   }
 });
 
+var stars = document.querySelectorAll('.star-icon');
+
+stars.forEach(function(star) {
+  // star.addEventListener('click', function(e) {
+  //   var classStar = e.target.classList;
+  //   if (!classStar.contains('ativo')) {
+  //     stars.forEach(function(star) {
+  //       star.classList.remove('ativo');
+  //     });
+  //     classStar.add('ativo');
+  //     console.log(e.target.getAttribute('data-avaliacao'));
+  //   }
+  // });
+});
