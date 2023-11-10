@@ -9,6 +9,7 @@
 
 body {
   background-color: #595959;
+  
 }
 
 .btn-back {
@@ -99,13 +100,17 @@ h1 {
   color: #595959;
 }
 
-.wallpaper {
-  width: 100%;
+.wallpaper  img{
+  height: 100vh;
+  width: auto; 
+  display: block;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   flex: 1;
 }
+
+
 
 @media (max-width: 768px) {
   .wallpaper {
