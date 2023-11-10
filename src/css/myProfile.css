@@ -147,6 +147,11 @@ section h1 {
 }
 
 @media (max-width: 768px) {
+  .conteiner-user {
+    margin: 20px 0;
+    width: 100%;
+  }
+
   .image-user {
     width: 60px;
   }
