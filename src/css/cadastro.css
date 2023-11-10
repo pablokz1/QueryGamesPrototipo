@@ -11,6 +11,17 @@ body {
   background-color: #595959;
 }
 
+.btn-back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+}
+
+.btn-back:hover {
+  cursor: pointer;
+}
+
 main {
   display: flex;
 }
