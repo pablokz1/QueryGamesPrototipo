@@ -1,33 +1,183 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <title>Home</title>
-    <link rel="stylesheet" href="css/footer.css">
-</head>
-<body>
-    
-</body>
-<footer>
+  </head>
+
+  <body>
+    <nav class="navigation">
+      <div class="logo">
+        <img src="./assets/image/logoQuery.png" alt="logo querygames" />
+      </div>
+
+      <div class="search-box">
+        <input type="text" class="search-txt" placeholder="buscar" />
+        <img src="./assets/image/lupa.svg" alt="lupa" />
+      </div>
+
+      <button class="login-btn">Entrar</button>
+
+      <div class="nav-txt">
+        <p>
+          <span>Explore</span> o universo dos<br />
+          <span>Jogos</span> como nunca antes
+        </p>
+      </div>
+
+      <div class="sidebar active">
+        <div class="profile-user">
+          <img src="./assets/image/profile.png" alt="" class="image-user" />
+          <a href="./pages/myProfile.html"><button class="my-profile-btn">Minha Página</button></a>
+          
+        </div>
+
+        <div class="toggle-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul>
+          <div class="menu">
+            <h1>Generos</h1>
+            <input type="checkbox" /> <label for="">Aventura</label><br />
+            <input type="checkbox" /> <label for="">Ação</label><br />
+            <input type="checkbox" /> <label for="">Rpg</label><br />
+            <input type="checkbox" /> <label for="">Esportes</label><br />
+            <input type="checkbox" /> <label for="">Terror</label><br />
+            <input type="checkbox" /> <label for="">Luta</label><br />
+            <span><hr class="line-menu" /></span>
+            <h2>Plataformas</h2>
+            <input type="checkbox" /> <label for="">Steam</label><br />
+            <input type="checkbox" /> <label for="">Game Pass</label><br />
+            <input type="checkbox" /> <label for="">PSN</label><br />
+            <input type="checkbox" /> <label for="">EA Play</label><br />
+          </div>
+        </ul>
+      </div>
+    </nav>
+
+    <section>
+      <h1>EM DESTAQUE</h1>
+      <div class="catalog1">
+        <div class="games1">
+          <div>
+            <img
+              src="./assets/image/daExAVIqaWz8NNeqTaFW2IcweYzqt4d8.webp"
+              alt=""
+            />
+            <h2>BATMAN ARKHAM NIGHT</h2>
+            <p>Ação</p>
+            <p class="platforms">STEAM</p>
+          </div>
+          <div>
+            <img src="./assets/image/Grand_Theft_Auto_V_capa.png" alt="" />
+            <h2>GRAND THEFT AUTO V</h2>
+            <p>Ação</p>
+            <p class="platforms">STEAM</p>
+          </div>
+          <div>
+            <img src="./assets/image/5bfdc39c5c4fb.jpg" alt="" />
+            <h2>THE FOREST</h2>
+            <p>Ação</p>
+            <p class="platforms">STEAM</p>
+          </div>
+          <div>
+            <img src="./assets/image/85p2Dwh5iDhUzRKe40QeNYh3.webp" alt="" />
+            <h2>RESIDENT EVIL</h2>
+            <p>Ação</p>
+            <p class="platforms">STEAM</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="catalog2">
+        <h1>MELHORES AVALIAÇÕES</h1>
+        <div class="games2">
+          <div>
+            <img
+              src="./assets/image/nova-capa-do-ea-sports-fc-24-1689275426846_v2_3x4.jpg"
+              alt=""
+            />
+            <ul class="avaliacao">
+              <li class="star-icon" data-avaliacao="1"></li>
+              <li class="star-icon" data-avaliacao="2"></li>
+              <li class="star-icon" data-avaliacao="3"></li>
+              <li class="star-icon" data-avaliacao="4"></li>
+              <li class="star-icon ativo" data-avaliacao="5"></li>
+            </ul>
+          </div>
+          <div>
+            <img src="./assets/image/pubg.webp" alt="" />
+            <ul class="avaliacao">
+              <li class="star-icon" data-avaliacao="1"></li>
+              <li class="star-icon" data-avaliacao="2"></li>
+              <li class="star-icon" data-avaliacao="3"></li>
+              <li class="star-icon ativo" data-avaliacao="4"></li>
+              <li class="star-icon" data-avaliacao="5"></li>
+            </ul>
+          </div>
+          <div>
+            <img
+              src="./assets/image/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.jpg"
+              alt=""
+            />
+            <ul class="avaliacao">
+              <li class="star-icon" data-avaliacao="1"></li>
+              <li class="star-icon" data-avaliacao="2"></li>
+              <li class="star-icon" data-avaliacao="3"></li>
+              <li class="star-icon ativo" data-avaliacao="4"></li>
+              <li class="star-icon" data-avaliacao="5"></li>
+            </ul>
+          </div>
+          <div>
+            <img src="./assets/image/Mortal_Kombat_11_capa.jpg" alt="" />
+            <ul class="avaliacao">
+              <li class="star-icon" data-avaliacao="1"></li>
+              <li class="star-icon" data-avaliacao="2"></li>
+              <li class="star-icon" data-avaliacao="3"></li>
+              <li class="star-icon ativo" data-avaliacao="4"></li>
+              <li class="star-icon" data-avaliacao="5"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+  </body>
+  <footer>
     <div class="container-logo-footer">
-        <img src="./assets/image/logoQuery.png" alt="logo querygames" class="logo-footer">
+      <img
+        src="./assets/image/logoQuery.png"
+        alt="logo querygames"
+        class="logo-footer"
+      />
     </div>
     <div class="container-announcement-footer">
-        <img src="./assets/image/baixe nosso app.png" alt="baixe Nosso App" class="announcement-img">
+      <img
+        src="./assets/image/baixe nosso app.png"
+        alt="baixe Nosso App"
+        class="announcement-img"
+      />
     </div>
     <div class="links">
-        <ul>
-            <li>
-                <a href="../index.html">Início</a>
-            </li>
-            <li>
-                <a href="#">Quem Somos?</a>
-            </li>
-            <li>
-                <p>Fale Conosco: <br>querygames@gmail.com</p>
-            </li>
-        </ul>
+      <ul>
+        <li>
+          <a href="#">Início</a>
+        </li>
+        <li>
+          <a href="#">Quem Somos?</a>
+        </li>
+        <li>
+          <p>Fale Conosco: <br />querygames&commat;gmail.com</p>
+        </li>
+      </ul>
     </div>
-</footer>
+  </footer>
 </html>

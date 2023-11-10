@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: #262626;
+}
+
+.conteiner-user {
+  width: 96.5%;
+  height: 160px;
+  background-color: #595959;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 25px 16px;
+}
+
+.profile-user {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-user {
+  width: 110px;
+}
+
+.data-user {
+  padding: 10px;
+}
+
+.data-user p1 {
+  font-size: 20px;
+  color: #d9d0c7;
+}
+
+.data-user p2 {
+  font-size: 12px;
+  color: #fec163;
+}
+
+.btn-register-game {
+  background-color: #262626;
+  color: #d9d0c7;
+  border-radius: 4px;
+  width: 146px;
+  height: 36px;
+}
+
+.btn-register-game:hover {
+  cursor: pointer;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.btn-config:hover {
+  cursor: pointer;
+}
+
+.btn-back {
+  margin-right: 20px;
+}
+
+.btn-back:hover {
+  cursor: pointer;
+}
+
+section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  background-color: #0d0d0d;
+  width: 100%;
+}
+
+section h1 {
+  font-family: Open Sans;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #d9d0c7;
+  padding: 10px;
+}
+
+.games {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.games > div {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+}
+
+.games img {
+  max-width: 70%;
+  height: 80%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.box-text {
+  font-family: Open Sans;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  padding: 10px;
+  background: transparent;
+  border: none;
+}
+
+.box-text select {
+  color: #d9d0c7;
+  font-family: Open Sans;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  padding: 10px;
+  background: transparent;
+  border: none;
+}
+
+.box-text option {
+  color: #0d0d0d;
+}
+
+@media (max-width: 768px) {
+  .image-user {
+    width: 60px;
+  }
+
+  .data-user p1 {
+    font-size: 16px;
+  }
+
+  .data-user p2 {
+    font-size: 13px;
+  }
+
+  .btn-register-game {
+    background-color: #262626;
+    color: #d9d0c7;
+    border-radius: 4px;
+    width: 102px;
+    height: 25px;
+    font-size: 10px;
+  }
+
+  .btn-config {
+    display: none;
+  }
+
+  section {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .my-list {
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+  }
+
+  .games {
+    display: flex;
+    scroll-behavior: smooth;
+    width: 100%;
+    gap: 0;
+    flex-wrap: nowrap;
+  }
+
+  .games > div {
+    flex: 0 0 auto;
+    width: 100%;
+    scroll-snap-align: start;
+    width: 50%;
+  }
+
+  .avaliacao {
+    max-width: 80%;
+    margin-left: 20px;
+  }
+
+  .star-icon {
+    font-size: 20px;
+  }
+}

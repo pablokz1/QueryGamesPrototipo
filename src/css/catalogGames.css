@@ -11,6 +11,17 @@ body {
   background-color: #595959;
 }
 
+.btn-back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+}
+
+.btn-back:hover {
+  cursor: pointer;
+}
+
 main {
   display: flex;
 }
@@ -24,14 +35,25 @@ h1 {
   letter-spacing: 7px;
 }
 
+.wrapper p {
+  color: #fff;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 20px;
+}
+
 .logo {
-  width: 302px;
-  height: 114px;
-  margin-bottom: 20px;
+  width: 112px;
+  height: 110px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+.container-user {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .register {
@@ -62,6 +84,7 @@ h1 {
   color: white;
   border: none;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .button:hover {
@@ -88,12 +111,32 @@ h1 {
   color: #595959;
 }
 
-.wallpaper {
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  flex: 1;
+.avaliacao {
+  display: flex;
+}
+
+.star-icon {
+  list-style-type: none;
+  border: none;
+  cursor: pointer;
+  color: #ffe500;
+  font-size: 40px;
+}
+
+.star-icon::before {
+  content: "\2605";
+}
+
+.star-icon.ativo ~ .star-icon::before {
+  content: "\2606";
+}
+
+.avaliacao:hover .star-icon::before {
+  content: "\2605";
+}
+
+.star-icon:hover ~ .star-icon::before {
+  content: "\2606";
 }
 
 @media (max-width: 768px) {
@@ -117,7 +160,8 @@ h1 {
   }
 
   .logo {
-    width: 250px;
+    width: 80px;
+    height: 80px;
   }
 
   .button {
