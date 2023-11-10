@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;  
+}
+
+body{
+  background-color: #595959;
+}
+
+main{
+  display: flex;
+}
+
+.logo{
+  width: 302px;
+  height: 114px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1{
+  color: #212121;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  letter-spacing: 7px;
+}
+
+.flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 100vh;
+  padding: clamp(35px,8%,70px);
+}
+
+.entrar{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.botaoEntrar{
+  font-weight: 600;
+  width: 146px;
+  height: 36px;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #262626;
+  color: #D9D0C7;
+  border: none;
+  cursor: pointer;
+}
+
+.botaoEntrar:hover{
+  background-color: #D9D0C7;
+}
+
+.box-text{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  
+}
+
+.input{
+  width: 100px;
+  background-color: #D9D9D9;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  outline: none;
+  font-size: 0.9em;
+  padding: 8px;
+  font-weight: 600;
+  font-style: italic;
+  color: #595959;
+}
+
+.imagemValorant{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 1;
+}
