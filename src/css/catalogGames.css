@@ -7,8 +7,31 @@
   font-family: "Open Sans", sans-serif;
 }
 
+::-webkit-scrollbar {
+  height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f1bf5e;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #262626;
+}
+
 body {
   background-color: #595959;
+  scrollbar-width: thin;
+  scrollbar-color: #f1bf5e #262626;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #f1bf5e;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #262626;
 }
 
 .btn-back {
@@ -74,6 +97,16 @@ h1 {
   justify-content: center;
 }
 
+.wallpaper  img{
+  height: 100%;
+  width: 43.3125em; 
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 1;
+}
+
 .button {
   font-weight: 600;
   width: 146px;
@@ -83,12 +116,13 @@ h1 {
   background-color: #262626;
   color: white;
   border: none;
-  cursor: pointer;
   margin-top: 20px;
 }
 
 .button:hover {
-  background-color: #d9d0c7;
+  background-color: #fec163;
+  color: #0d0d0d;
+  cursor: pointer;
 }
 
 .box-text {
