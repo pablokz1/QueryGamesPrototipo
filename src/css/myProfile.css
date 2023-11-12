@@ -153,6 +153,10 @@ section h1 {
   margin-bottom: 10px;
 }
 
+.games img:hover {
+  border: 2px solid #f1bf5e; 
+}
+
 .box-text {
   font-family: Open Sans;
   font-size: 22px;

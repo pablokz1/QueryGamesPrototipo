@@ -153,6 +153,16 @@ a.sing-up {
   height: 50px;
   display: block;
   margin-bottom: 30px;
+  position: relative;
+}
+
+.box-text i {
+  font-size: 30px;
+  color: #262626;
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  top: 10px;
 }
 
 .input {
