@@ -4,7 +4,30 @@
   border: 0;
 }
 
+::-webkit-scrollbar {
+  height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f1bf5e;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #262626;
+}
+
 body {
+  background-color: #262626;
+  scrollbar-width: thin;
+  scrollbar-color: #f1bf5e #595959;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #f1bf5e;
+}
+
+body::-webkit-scrollbar-track {
   background-color: #262626;
 }
 
@@ -46,7 +69,7 @@ body {
   color: #fec163;
 }
 
-.btn-register-game {
+.btn-catalog-game {
   background-color: #262626;
   color: #d9d0c7;
   border-radius: 4px;
@@ -54,7 +77,9 @@ body {
   height: 36px;
 }
 
-.btn-register-game:hover {
+.btn-catalog-game:hover {
+  background-color: #fec163;
+  color: #0d0d0d;
   cursor: pointer;
 }
 
@@ -95,19 +120,30 @@ section h1 {
   padding: 10px;
 }
 
+.my-list {
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+}
+
 .games {
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
+  scroll-behavior: smooth;
+  width: 100%;
+  flex-wrap: nowrap;
 }
 
 .games > div {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  flex: 1;
-  text-align: center;
   color: #fff;
+  flex: 0 0 auto;
   padding: 10px;
+  scroll-snap-align: start;
+  text-align: center;
+  width: 25%;
+  height: 25em;
 }
 
 .games img {
@@ -182,33 +218,15 @@ section h1 {
     white-space: nowrap;
   }
 
-  .my-list {
-    overflow-x: auto;
-    white-space: nowrap;
-    scroll-snap-type: x mandatory;
-  }
-
   .games {
-    display: flex;
-    scroll-behavior: smooth;
-    width: 100%;
     gap: 0;
-    flex-wrap: nowrap;
   }
 
   .games > div {
-    flex: 0 0 auto;
+    width: 70%;
+  }
+
+  .games img {
     width: 100%;
-    scroll-snap-align: start;
-    width: 50%;
-  }
-
-  .avaliacao {
-    max-width: 80%;
-    margin-left: 20px;
-  }
-
-  .star-icon {
-    font-size: 20px;
   }
 }
