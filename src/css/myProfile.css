@@ -118,6 +118,7 @@ section h1 {
   text-align: left;
   color: #d9d0c7;
   padding: 10px;
+  margin-left: 20px;
 }
 
 .my-list {
@@ -136,7 +137,6 @@ section h1 {
 
 .games > div {
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: #fff;
   flex: 0 0 auto;
   padding: 10px;
@@ -180,6 +180,7 @@ section h1 {
   padding: 10px;
   background: transparent;
   border: none;
+  margin-left: 10px;
 }
 
 .box-text option {
