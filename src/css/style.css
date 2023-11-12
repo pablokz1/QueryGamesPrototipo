@@ -146,7 +146,7 @@ body::-webkit-scrollbar-track {
   position: absolute;
   left: -250px;
   width: 250px;
-  height: 624px;
+  height: 590px;
   background-color: rgba(13, 13, 13, 0.95);
   color: white;
   transition: all 300ms ease-in-out;
@@ -227,6 +227,8 @@ body::-webkit-scrollbar-track {
   padding: 1rem;
   font-size: 12px;
   margin-left: 10px;
+  max-height: 470px;
+  overflow-y: auto; 
 }
 
 .menu input {
