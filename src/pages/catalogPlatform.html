@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/catalogGames.css" />
+    <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+
+    <title>Catálogo de Plataforma</title>
+  </head>
+  <body>
+
+    <img src="../assets/image/logoff.png" alt="" class="btn-back" onclick="goBack()">
+
+    <main>
+      <section class="register">
+        <div class="wrapper">
+            
+          <div class="container-user">
+            <img src="../assets/image/profile.png" class="logo" />
+            <p>Name</p>
+          </div>
+
+          <h1>Catalogar Plataforma</h1>
+
+          <label class="box-text">
+            <input
+              type="text"
+              name="platform"
+              class="input"
+              placeholder="Nome da Plataforma"
+              id="platform"
+            />
+          </label>         
+
+          <button class="button" onclick="catalog()">Catalogar</button>
+        </div>
+      </section>
+
+      <section class="wallpaper">
+        <img src="../assets/image/carroCadastro.png" alt="" />
+      </section>
+    </main>
+
+    <script src="../js/catalogGames.js"></script>
+    <script src="../js/goBack.js"></script>
+  </body>
+
+  <footer>
+    <div class="container-logo-footer">
+      <img
+        src="../assets/image/logoQuery.png"
+        alt="logo querygames"
+        class="logo-footer"
+      />
+    </div>
+    <div class="container-announcement-footer">
+      <img
+        src="../assets/image/baixe nosso app.png"
+        alt="baixe Nosso App"
+        class="announcement-img"
+      />
+    </div>
+    <div class="links">
+      <ul>
+        <li>
+          <a href="../index.html">Início</a>
+        </li>
+        <li>
+          <a href="#">Quem Somos?</a>
+        </li>
+        <li>
+          <p>Fale Conosco: <br />querygames&commat;gmail.com</p>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</html>
